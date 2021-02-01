@@ -7,7 +7,9 @@ Completed as the Capstone Project for IBM Professional Certificate in Data Scien
 
 
 ## Technologies
-python 3.7
+python 3.7.3
+numpy 1.16.2
+pandas 1.1.0
 
 
 ## Launch
