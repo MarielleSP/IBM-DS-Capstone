@@ -36,7 +36,7 @@ A map of the city will be generated with neighborhoods color-coded based on thei
 - The number of venues is limited to 10 per neighborhood
 
 
-[Jupyter notebook](https://https://github.com/MarielleSP/Rate-Neighborhoods/blob/main/Rate-Neighborhoods.ipynb)
+[Jupyter notebook](https://github.com/MarielleSP/Rate-Neighborhoods/blob/main/Rate-Neighborhoods.ipynb)
 
 
 ## Discussion
