@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/MarielleSP/Rate-Neighborhoods/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Completed as the Capstone Project for IBM Professional Certificate in Data Science.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Business Question
 
-### Markdown
+For a real estate company, **how can we more efficiently sell houses** (or rent apartments)? A major factor in home buyers' decision is the neighborhood surrounding the home. i.e., What businesses and services are nearby? This tool will allow buyers to select their top venue types and will generate a score for each neighborhood based on the buyers' desired features. This will allow real estate agents to focus on neighborhoods that are more suited to the buyers' needs, reducing time wasted on unproductive leads. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Data Collection
 
-```markdown
-Syntax highlighted code block
+Inputs: neighborhood or postal code location; buyer's prefered venues
 
-# Header 1
-## Header 2
-### Header 3
+Outputs: neighborhood score from 0 (worst) to 100 (best) 
 
-- Bulleted
-- List
+Data Needs: 
+- What types of businesses and services are located within a given radius from a given location. (Foursquare API)
 
-1. Numbered
-2. List
+### Data Manipulation
 
-**Bold** and _Italic_ and `Code` text
+- The number of venue types in Foursquare is very large and will need to be reduced to make a list from which buyers can select. 
+- The reduced venue types will receive one-hot encoding, and the sum of each venue type will be entered into the scoring function. 
+- The users' preferences will provide a weight for each venue type within the scoring function. The number of venues and weights of each type will provide a score that needs to be scaled to 100 as a maximum. 
+    - Option for multiple users' preferences, e.g. for spouses with different preferences
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Data Visualization
 
-### Jekyll Themes
+A map of the city will be generated with neighborhoods color-coded based on their neighborhood score (high score = green ; low score = red). 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MarielleSP/Rate-Neighborhoods/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+#### For Development and Testing Purposes
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- two users with pre-defined preferences
+- the city is pre-defined as New Orleans, LA
+    - with latitude and longitude available in a Wikipedia table
+- The number of venues is limited to 10 per neighborhood
+
+
+[Jupyter notebook](https://https://github.com/MarielleSP/Rate-Neighborhoods/blob/main/Rate-Neighborhoods.ipynb)
+
+
+## Discussion
+
+### Room for Improvement
+
+- The categories from Foursquare are a little wonky, sometimes too detailed (e.g., 'Sausage Shop'), sometimes not detailed enough (e.g. 'Church' but no ability to select denomination). A better category scheme is needed. 
+- The score could be modified to provide a walking score and a driving score.
+- Other types of data are also important:
+    - safety of the neighborhood
+    - quality of schools and other venues
+- There does not seem to be a single source for neighborhood data online. 
+- A realistic number of venues will require a paid account.
+
+
+
