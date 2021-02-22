@@ -81,8 +81,7 @@ The top 5 neighborhoods for this couple are :
 Based on my knowledge of the city, this prediction is good. These neighborhoods all have a high concentration of bars and restuarants. The French Quarter is ranked number 23, which is surprisingly low; this might be due to the lack of parks and churches, which are a preference for User 1. 
 
 
-Static png image for display: 
-![Ratings of Neighborhoods](ratings01.png)
+![Static png image for display](ratings01.PNG)
 
 ## Discussion
 
