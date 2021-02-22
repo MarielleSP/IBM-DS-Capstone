@@ -17,7 +17,7 @@ Let's consider a couple wanting to buy a home in New Orleans, LA. The couple hav
  
   
 The following map is generated with dots for each neighborhood color coded with dark green being the best neighborhoods and dark red being the worst neighborhoods for the preferences of this couple.  
-![Static png image for display](https://github.com/MarielleSP/Rate-Neighborhoods/blob/main/ratings01.PNG)
+![Static png image for display](ratings01.PNG)
 
 
 
