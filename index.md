@@ -32,7 +32,7 @@ The top 5 highest-scoring neighborhoods for this couple are :
 Based on my knowledge of the city, this prediction is good. These neighborhoods all have a high concentration of restuarants and nightlife spots, which are preferred by this couple. (The French Quarter is ranked number 23, which is surprisingly low; this might be due to the lack of parks and churches, which are a preference for User 1.) 
 
 
-### Try out the [web app] version for yourself. 
+### Try out the [web app](https://rate-neighborhoods-app.herokuapp.com/) version for yourself. 
 It was implemented with Streamlit and hosted on Heroku. 
 
 
