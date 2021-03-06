@@ -32,8 +32,7 @@ The top 5 highest-scoring neighborhoods for this couple are :
 Based on my knowledge of the city, this prediction is good. These neighborhoods all have a high concentration of restuarants and nightlife spots, which are preferred by this couple. (The French Quarter is ranked number 23, which is surprisingly low; this might be due to the lack of parks and churches, which are a preference for User 1.) 
 
 
-### Try out the [web app](https://rate-neighborhoods-app.herokuapp.com/) version for yourself. 
-It was implemented with Streamlit and hosted on Heroku. 
+** Try out the [web app](https://rate-neighborhoods-app.herokuapp.com/) version for yourself. ** It was implemented with Streamlit and hosted on Heroku. 
 
 
 In addition to the neighborhood amenities, other factors such as neighborhood safety and school quality are often important to buyers. This information is not available from Foursquare and so will require integration of new data sources and API's into the current program. This project could be combined with current filtering options on real estate websites to help potential buyers more rapidly narrow down their housing option, resulting in saved time for the realtor and increased customer satisfaction for the buyer.  
